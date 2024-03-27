@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Firebase Crashlytics",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/firebase_crashlytics/main.dart",
+            "flutterMode": "debug"
+        }
+    ]
+}
