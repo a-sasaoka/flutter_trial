@@ -198,6 +198,7 @@
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				59B020EF2BB696AA00073AD7 /* Select GoogleService-Info.plist */,
+				590FA2A62BB6C72600131821 /* Select firebase_app_id_file.json */,
 				97C146EC1CF9000F007C117D /* Resources */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
@@ -335,6 +336,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/FirebaseCrashlytics/upload-symbols\" --flutter-project \"$PROJECT_DIR/firebase_app_id_file.json\" ";
+		};
+		590FA2A62BB6C72600131821 /* Select firebase_app_id_file.json */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Select firebase_app_id_file.json";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\\cp -f ${SRCROOT}/${flavor}/firebase_app_id_file.json ${SRCROOT}/firebase_app_id_file.json\n";
 		};
 		59B020EF2BB696AA00073AD7 /* Select GoogleService-Info.plist */ = {
 			isa = PBXShellScriptBuildPhase;

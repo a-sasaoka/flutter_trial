@@ -49,3 +49,4 @@ android/app/google-services.json
 ios/Runner/GoogleService-Info.plist
 
 ios/Flutter/Dart-Defines.xcconfig
+ios/firebase_app_id_file.json
