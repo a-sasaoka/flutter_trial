@@ -6,14 +6,16 @@ import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_trial/firebase_options.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_trial/environment/firebase_options.dart';
+import 'package:flutter_trial/environment/flavor_provider.dart';
 
 Future<void> main() async {
   final widgetBinding = WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  final flavor = Flavor.values.byName(const String.fromEnvironment('flavor'));
+
+  await Firebase.initializeApp(options: firebaseOptionsWithFlavor(flavor));
 
   // Flutter内で発生したエラーを処理する
   FlutterError.onError = (details) async {
@@ -30,7 +32,11 @@ Future<void> main() async {
     return true;
   };
 
-  runApp(const MyApp());
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
