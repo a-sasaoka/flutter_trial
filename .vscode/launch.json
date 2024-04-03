@@ -12,6 +12,16 @@
             ]
         },
         {
+            "name": "permission_handler",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/permission_handler/main.dart",
+            "flutterMode": "debug",
+            "args": [
+                "--dart-define-from-file=dart_defines/dev.env"
+            ]
+        },
+        {
             "name": "Debug dev",
             "request": "launch",
             "type": "dart",
