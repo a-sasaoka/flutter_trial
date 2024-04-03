@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_trial/environment/flavor_provider.dart';
 import 'package:flutter_trial/util/providers/permission_provider.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -67,6 +68,10 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
                     ref.read(permissionCameraProvider.notifier).request();
                   },
                   child: const Text('権限を要求'),
+                ),
+                const TextButton(
+                  onPressed: openAppSettings,
+                  child: Text('OSの設定画面表示'),
                 ),
               ],
             ),
