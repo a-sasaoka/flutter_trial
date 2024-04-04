@@ -56,5 +56,21 @@
     <key>NSCameraUsageDescription</key>
     <string>camera</string>
 
+    <!-- DeepLink start -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>as-lab.tokyo</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>flutterTrial</string>
+            </array>
+        </dict>
+    </array>
+    <!-- DeepLink end -->
+
 </dict>
 </plist>
