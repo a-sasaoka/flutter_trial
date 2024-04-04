@@ -22,6 +22,16 @@
             ]
         },
         {
+            "name": "DeepLink",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/deep_link/main.dart",
+            "flutterMode": "debug",
+            "args": [
+                "--dart-define-from-file=dart_defines/dev.env"
+            ]
+        },
+        {
             "name": "Debug dev",
             "request": "launch",
             "type": "dart",
