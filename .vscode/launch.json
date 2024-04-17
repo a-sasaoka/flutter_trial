@@ -52,6 +52,16 @@
             ]
         },
         {
+            "name": "http",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/http/main.dart",
+            "flutterMode": "debug",
+            "args": [
+                "--dart-define-from-file=dart_defines/dev.env"
+            ]
+        },
+        {
             "name": "Debug dev",
             "request": "launch",
             "type": "dart",
