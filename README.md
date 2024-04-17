@@ -7,3 +7,4 @@ Flutterでいろいろ試したり確認したり
 3. [permission_handlerを使った権限周りの実装](https://github.com/a-sasaoka/flutter_trial/issues/11)
 4. [ディープリンクのサンプル実装](https://github.com/a-sasaoka/flutter_trial/issues/13)
 5. [go_routerを使った画面遷移を確認する](https://github.com/a-sasaoka/flutter_trial/issues/16)
+6. [httpパッケージをカスタマイズして使う](https://github.com/a-sasaoka/flutter_trial/issues/19)
