@@ -52,15 +52,14 @@ class MyHomePage extends ConsumerStatefulWidget {
 }
 
 class _MyHomePageState extends ConsumerState<MyHomePage> {
-  // ignore: use_setters_to_change_properties
-  void _callback(Uri? uri) {
-    ref.read(deepLinkUriProvider.notifier).state = uri;
-  }
-
   @override
   void initState() {
     super.initState();
-    ref.read(DeepLinkProvider(callback: _callback));
+    ref.read(
+      DeepLinkProvider(
+        callback: (uri) => ref.read(deepLinkUriProvider.notifier).state = uri,
+      ),
+    );
   }
 
   @override
