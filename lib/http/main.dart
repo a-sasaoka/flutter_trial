@@ -63,8 +63,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
           children: [
             TextButton(
               onPressed: () async {
-                final url =
-                    Uri.https('jsonplaceholder.typicode.com', '/todos/1');
+                final url = Uri.http('localhost:3000', '/posts/1');
                 final response = await http.get(url);
                 log('statusCode = ${response.statusCode}');
                 log('body = ${response.body}');
@@ -73,8 +72,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
             ),
             TextButton(
               onPressed: () async {
-                final url =
-                    Uri.https('jsonplaceholder.typicode.com', '/todos/1');
+                final url = Uri.http('localhost:3000', '/comments/1');
                 final response = await _client.get(url);
                 log('statusCode = ${response.statusCode}');
                 log('body = ${response.body}');
