@@ -8,3 +8,4 @@ Flutterでいろいろ試したり確認したり
 4. [ディープリンクのサンプル実装](https://github.com/a-sasaoka/flutter_trial/issues/13)
 5. [go_routerを使った画面遷移を確認する](https://github.com/a-sasaoka/flutter_trial/issues/16)
 6. [httpパッケージをカスタマイズして使う](https://github.com/a-sasaoka/flutter_trial/issues/19)
+7. [アプリ内で扱うデータをJSON形式でローカルファイルに保存することで永続化する](https://github.com/a-sasaoka/flutter_trial/issues/21)
