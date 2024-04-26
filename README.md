@@ -9,3 +9,4 @@ Flutterでいろいろ試したり確認したり
 5. [go_routerを使った画面遷移を確認する](https://github.com/a-sasaoka/flutter_trial/issues/16)
 6. [httpパッケージをカスタマイズして使う](https://github.com/a-sasaoka/flutter_trial/issues/19)
 7. [アプリ内で扱うデータをJSON形式でローカルファイルに保存することで永続化する](https://github.com/a-sasaoka/flutter_trial/issues/21)
+8. [複数箇所で定義したrouterを1つにまとめて扱う](https://github.com/a-sasaoka/flutter_trial/issues/25)
