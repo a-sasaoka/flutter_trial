@@ -52,6 +52,16 @@
             ]
         },
         {
+            "name": "router3",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/router3/not_common/main.dart",
+            "flutterMode": "debug",
+            "args": [
+                "--dart-define-from-file=dart_defines/dev.env"
+            ]
+        },
+        {
             "name": "router_redirect",
             "request": "launch",
             "type": "dart",
